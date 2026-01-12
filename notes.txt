@@ -1,0 +1,3 @@
+list are mutable means hum list me change kr sakhte hen
+strings are immutable means hum strings me change nh krsakhte
+tuple are immutable means hum change nh krsakhte

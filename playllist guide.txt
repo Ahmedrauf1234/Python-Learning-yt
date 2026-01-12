@@ -1,0 +1,3 @@
+lectures 1 to 8 sharadha khapra
+lecture 1 = varibles and data types
+lecture 2 = strings functions and conditional statments
