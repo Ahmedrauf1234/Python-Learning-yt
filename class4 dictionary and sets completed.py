@@ -60,7 +60,7 @@ print(myDic)
 
 
 #================================Sets in python==========================>>!!
-
+#sets mutable hai lakin is k elements immutable hai
 #sets unorder hote hen koi index nh hota || print me kahi bhi koi bhi cheez aasakhti
 #sets me item unique hote or immutable hote hum change nh krsakhte
 #string , tuple hum store krwa sakhte sets me q k ye immutable hote hen list or dictionay nh krwa sakhte q k mutale hote hen

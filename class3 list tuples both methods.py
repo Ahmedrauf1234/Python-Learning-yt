@@ -23,7 +23,7 @@ print(list1)
 
 
 #===================================Tuples======================>>
-
+#1 dafa tuple ban gaya ab usme kuch add or delete nh hosakhta ye immutable hai
 
 tuple1 = (1 , 2 , 3 , 4)
 print(tuple1[1])
@@ -78,6 +78,9 @@ if (user1.lower() == user2.lower()[::-1]):
    print("palindrome")
 else:
    print("not palindrome")
+
+
+
 
 
 
