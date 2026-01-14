@@ -1,0 +1,14 @@
+git init
+git add .
+git commit -m "massage"
+git branch -M main
+git remote add origin https://github.com/Ahmedrauf1234/Python-Learning.git
+git push -u origin main
+
+xxx===================================Changes code again push code ===========================xxx
+
+git status
+git add .
+git commit -m "Update code"
+git push
+```
