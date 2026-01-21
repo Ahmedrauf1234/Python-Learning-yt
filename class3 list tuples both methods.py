@@ -30,7 +30,7 @@ print(tuple1[1])
 #tuple1[2] = 10  #yhn errfor hai hum change nh krsakhte 1 k tuple immutable hai list or tuple me yahi farq hai major list change kr sakh'te lakin tuple nhi
  #===================================>>
 
-tup = (1,) #ye lg touple raha hai lakin hai nh pyhton isko integer suppose krraha hai tuple krne k liye 1 k bad , lagana hoga
+tup = (1) #ye lg touple raha hai lakin hai nh pyhton isko integer suppose krraha hai tuple krne k liye 1 k bad , lagana hoga
 print(tup)
 print(type(tup)) #type iski int ayegi
 
