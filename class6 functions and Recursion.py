@@ -70,40 +70,108 @@ def Check_Num(num):
 #jo kaam hum loops se krte hen wo recursion se bhi kiya jaa sakhte
 #sab se pehle recurion me hame kaam batana hota hai or condition zarori hai
 
-def show(n):
-    if(n == 11): # isko base case bolte hen means stopping condition
-        return
-    print(n)
-    show(n+1)
+# def show(n):
+#     if(n == 11): # isko base case bolte hen means stopping condition
+#         return
+#     print(n)
+#     show(n+1)
     # print("end")
 #show(1) # 1 se lekar 10 tk counting print krdega
 
 #====================Example Recursion factorial=================>>
-def cal_fact(n):
-    if (n == 0 or n == 1):
-        return 1
-    else:
-        return cal_fact(n - 1) * n
+# def cal_fact(n):
+#     if (n == 0 or n == 1):
+#         return 1
+#     else:
+#         return cal_fact(n - 1) * n
         
-print(cal_fact(4))
+# print(cal_fact(4))
 
 #=======================Recursion practice questions===============>>!!
-def nat_Num(n):
-    if(n == 0):
-        return 0
-    else:
+# def nat_Num(n):
+#     if(n == 0):
+#         return 0
+#     else:
         
-       return nat_Num(n - 1) + n
+#        return nat_Num(n - 1) + n
 
 # print(nat_Num(10))
 
 #=============================
 
-cars = ["car", "bus", "train", "bike", "plane", "ship", "truck", "van", "scooter", "metro"]
-def print_list(list , idx = 0):
-    if(idx == len(list)):
-        return
-    print(list[idx])
-    print_list(list , idx+1)
-print_list(cars)
+# cars = ["car", "bus", "train", "bike", "plane", "ship", "truck", "van", "scooter", "metro"]
+# def print_list(list , idx = 0):
+#     if(idx == len(list)):
+#         return
+#     print(list[idx])
+#     print_list(list , idx+1)
+# print_list(cars)
+
+#===========================Enumirated==================>>
+
+# cars = ["car", "bus", "train", "bike", "plane", "ship", "truck", "van", "scooter", "metro"]
+
+# for index, car in enumerate(cars):
+#     print(index , car) #ye hame index or value dono lake deta hai
+
+#=========================Quiz function==============>>!!
+
+
+quiz = [
+    {
+        "question": "Python kis type ki language hai?",
+        "options": ["Compiled", "Interpreted", "Machine", "Assembly"],
+        "answer": "B"
+    },
+    {
+        "question": "Python me list ka symbol kya hota hai?",
+        "options": ["()", "{}", "[]", "<>"],
+        "answer": "C"
+    },
+    {
+        "question": "Python me output ke liye konsa function use hota hai?",
+        "options": ["print()", "show()", "display()", "output()"],
+        "answer": "A"
+    },
+    {
+        "question": "Python me comment kis se hota hai?",
+        "options": ["//", "#", "/* */", "<!-- -->"],
+        "answer": "B"
+    },
+    {
+        "question": "Python me keyword ka rang IDE me kaisa hota hai?",
+        "options": ["Red", "Blue", "Green", "Yellow"],
+        "answer": "B"
+    }
+]
+
+def quizapp():
+   Score = 0
+   for index, ques in enumerate(quiz ,start=1):
+       print(f"Q{index} {ques['question']}")
+       for option in ques["options"]:
+        print(option)
+        
+        
+       user_input = input("Enter Anwer: ABCD?").lower().strip()
+       if (user_input == ques["answer"].lower()):
+            print(f"Correct Answer!!")
+            Score += 1
+            
+       else:
+            print(f"Wrong Answer!! correct is {ques['answer']}")
+        
+
+   print("Quiz finished")
+   print(f"your score is {Score}")
+        
+    
+    
+    
+    
+        
+
+
+# quizapp()
+#===========================task questions==============>
 

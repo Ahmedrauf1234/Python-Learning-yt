@@ -15,6 +15,10 @@ print(str1.capitalize()) #ye 1st word capital krega
 print(str1.replace("y" , "m")) #jhn jhn y hoga ye m se replace krdega
 print(str1.find('am')) #ye g batadega k knse index per hai || pora word bhi batadga
 print(str1.count('a')) #a kitni dafa aya hai string me batadega
+print(type(str1.split(","))) #ye string se array me convert krta hai||ye sirf string ka method
+str2 = ["i",  "am" , "studying python"] #ye string wali list per krta hai kaam agar is mr num , bool value arahi hoti to error ata||.join() list → string convert karta hai (agar elements string hon). ye list ka 1 mthod hai||agr number bool values hen to pehle isko string me convert krna prega
+con = " ".join(str2)
+print(con)
 
 #==========================================Ends string builtin functions============
 
@@ -65,9 +69,9 @@ else:
 
 #=================================Notes================>>
 
-str = "hello"
-print(str[0]) #ye hum krsakhte hen acess 
-str[0] = "y" # ye nh krsakhte q k ye immutable hai change nh krsakhte isko alag se varible me rakh k bhi nh krsakhte
+# str = "hello"
+# print(str[0]) #ye hum krsakhte hen acess 
+# str[0] = "y" # ye nh krsakhte q k ye immutable hai change nh krsakhte isko alag se varible me rakh k bhi nh krsakhte
 # print(str) #error
 
 

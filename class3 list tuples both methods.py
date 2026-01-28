@@ -20,6 +20,9 @@ list1.insert(1 , 5) # ye 1 index per 5 add krdega
 list1.pop(2) #2 index per jo bhi hoga delete krdega
 list1.extend(list2) #ye 2 lists to 1 me le ayega
 print(list1)
+list3 = ["i",  "am" , "studying python"] #ye string wali list per krta hai kaam agar is mr num , bool value arahi hoti to error ata||.join() list → string convert karta hai (agar elements string hon). ye list ka 1 mthod hai
+con = " ".join(list3)
+print(con)
 
 
 #===================================Tuples======================>>
