@@ -1,3 +1,24 @@
+=======================ye pip wali hai commands
 python -m venv  .venv
 python -m pip install streamlit
 python -m streamlit run app.py
+
+===========================ye uv wali hai jo sir krwa rahe
+py -m pip install uv
+py -m uv --version
+py -m uv venv (.venv wali file ajayegi)
+.venv\Scripts\activate (ye cmd me krna hai )Terminal start me (.venv) dikhna chahiye
+python -m pip install streamlit pandas numpy (ye powershell per chalna hai)
+python -m streamlit hello
+
+====================
+agr streamlit install hone me msla ho
+python -m ensurepip --upgrade (cmd me chalegi)
+python -m pip install streamlit (cmd)
+python -m streamlit run app.py
+
+
+
+
+
+
