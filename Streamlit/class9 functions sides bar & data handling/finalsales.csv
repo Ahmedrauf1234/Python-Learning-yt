@@ -1,0 +1,11 @@
+sale_id,date,hotel_name,chai_type,cups_sold,price_per_cup,total_amount,city
+1,01/01/2025,Al-Habib Chai,Wali Chai,45,50,2250,Karachi
+2,01/01/2025,Al-Habib Chai,Doodh Patti,60,60,3600,Karachi
+3,01/01/2025,Al-Habib Chai,Green Tea,25,70,1750,Karachi
+4,02/01/2025,Al-Habib Chai,Wali Chai,55,50,2750,lahore
+5,02/01/2025,Al-Habib Chai,Doodh Patti,70,60,4200,Karachi
+6,02/01/2025,Al-Habib Chai,Kashmiri Chai,30,120,3600,Karachi
+7,03/01/2025,Al-Habib Chai,Wali Chai,65,50,3250,Karachi
+8,03/01/2025,Al-Habib Chai,Doodh Patti,80,60,4800,islamabad
+9,03/01/2025,Al-Habib Chai,Green Tea,35,70,2450,peshawar
+10,03/01/2025,Al-Habib Chai,Kashmiri Chai,40,120,4800,gilgit
