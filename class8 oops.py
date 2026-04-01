@@ -37,7 +37,7 @@ class Students : #this is class
         print("Adding new student in Database")
 
 
-# s2 = Students("Talha" , 88) #this is object
+# s2 = Students("Talha" , 88) #this is object objects are mutable
 # print(s2.name , s2.marks)
 # s3 = Students("Muahmmad" , 67)
 # print(s3.name , s2.marks)
@@ -60,7 +60,7 @@ class Students1 : #this is class
         self.name = name #ye bobject attribues heen
         self.marks = marks
     
-    def welcome(self): #class k andar welcome function
+    def welcome(self): #class k andar welcome function ye mathod kehlata hai
         print("Welcome Student" , self.name)
     
     def get_marks(self):
@@ -98,14 +98,56 @@ s10.hello()
 
 
 #=================inportant consepts of oops Abstraction and Encapsulation==========>>
+#Abstraction means ap code me unsecessary cheez ko hise krdo Sirf zarori cheezen dikhao user ko use Abstraction kehte hen
+#uncapsulation same yahi cheez hai class banai undar function likhdiya uncapulate krdiya jo bhi humm abhi tk krte aye hen wo uncapsulation hai
+class Car :
+    def __init__(self):
+        self.acc = False
+        self.brk = False
+        self.clutch = False
+    def Start(self):
+        self.clutch = True #unnecessory hai
+        self.acc = True    #unnecessory hai
+        print("Car Started...") #user ko sirf ye dikahaya
+car1 = Car()
+car1.Start()
 
 
-# class Car :
-#     def __init__(self):
-#         self.acc = False
-#         self.brk = False
-#         self.clutch = False
-#     def Start()
+#===============Paractice Question==============>>
+
+
+class Account :
+    def __init__(self , bal , acc):
+        self.balance = bal
+        self.account = acc
+    def debit(self , amount):
+        self.balance -= amount
+        print(f"Rs: {amount} was Debited")
+        print(f"Total Balance is {self.get_balance()}")
+
+    def credit(self , amount):
+        self.balance += amount
+        print(f"Rs: {amount} was Credit")
+        print(f"Total Balance is {self.get_balance()}")
+
+    def get_balance(self):
+        return self.balance
+
+        
+
+
+
+acc1 = Account(50000 , 4567)
+acc1.debit(15000)
+acc1.credit(60000)
+
+
+
+
+
+
+
+
 
 
 

@@ -125,5 +125,34 @@ sum = 0
 for i in range(1 , n+1):
     sum += i
     print(sum)
+#=====================================Number Giess Game==================??
+import random as rd
+
+computer_choice = rd.randint(1 , 11)
+user_choice = int(input("Enter Number you guess?"))
+attemp = 1
+total_attemps = 0
+
+while computer_choice != user_choice:
+
+    if computer_choice < user_choice:
+        print("Guess The smaller number")
+    elif computer_choice > user_choice:
+        print("guess the greater number")
+    
+    user_choice = int(input("Type again number 1 to 11"))
+
+    attemp += 1
+    total_attemps += 1
+    
+    if attemp == 6:
+        print(f"you have done 10 {attemp} attemps didi not guess correctly")
+        print(f"computer guess number is {computer_choice}.")
+        computer_choice = rd.randint(1 , 11)
+        attemp = 0
+        
+else:
+    print(f"Nice , You Won the Match \n you guessed the correct number in {total_attemps} attemps")
+    
 
  

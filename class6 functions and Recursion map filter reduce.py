@@ -114,64 +114,53 @@ def Check_Num(num):
 # for index, car in enumerate(cars):
 #     print(index , car) #ye hame index or value dono lake deta hai
 
-#=========================Quiz function==============>>!!
+#========================Map filter Reduce lamda function==============>>
+#map ka concept map(function , iterable mrans jis per perform krna us ka name)
+#pori list per operation perform krna hai to map used hoga
+#list me koi condition ho or uski behalf per andar se kuch data nikal k ajaye to filter used hoga
+
+numbers = [  n for n in range(1 , 11)]
+double_number = list(map(lambda x : "even" if x % 2 == 0  else "odd", numbers))
+print(double_number)
+
+even_number = list( filter(lambda x :"even" if x % 2 ==0 else "odd", numbers))
+print(even_number)
+
+# point = [(1 , 4) , (2 , 5) , (7 , 9) , (6 , 7)]
+# sorted = sorted(point , key= lambda point: point[0])
+# print(sorted)
+
+#===========================Reduce======================>>
+#reduce() multiple values ko combine karke ek single value bana deta hai.
 
 
-quiz = [
-    {
-        "question": "Python kis type ki language hai?",
-        "options": ["Compiled", "Interpreted", "Machine", "Assembly"],
-        "answer": "B"
-    },
-    {
-        "question": "Python me list ka symbol kya hota hai?",
-        "options": ["()", "{}", "[]", "<>"],
-        "answer": "C"
-    },
-    {
-        "question": "Python me output ke liye konsa function use hota hai?",
-        "options": ["print()", "show()", "display()", "output()"],
-        "answer": "A"
-    },
-    {
-        "question": "Python me comment kis se hota hai?",
-        "options": ["//", "#", "/* */", "<!-- -->"],
-        "answer": "B"
-    },
-    {
-        "question": "Python me keyword ka rang IDE me kaisa hota hai?",
-        "options": ["Red", "Blue", "Green", "Yellow"],
-        "answer": "B"
-    }
-]
+from functools import reduce
 
-def quizapp():
-   Score = 0
-   for index, ques in enumerate(quiz ,start=1):
-       print(f"Q{index} {ques['question']}")
-       for option in ques["options"]:
-        print(option)
-        
-        
-       user_input = input("Enter Anwer: ABCD?").lower().strip()
-       if (user_input == ques["answer"].lower()):
-            print(f"Correct Answer!!")
-            Score += 1
-            
-       else:
-            print(f"Wrong Answer!! correct is {ques['answer']}")
-        
+nums = [i for i in range(1,5)]
+result = reduce(lambda x,y :x + y , numbers)
+print(result)
 
-   print("Quiz finished")
-   print(f"your score is {Score}")
-        
-    
-    
-    
-    
-        
+red_func = reduce(lambda x,y : x*y if y%2 == 0 else 1, [1,2,3,4])
+print(red_func)
+
+data = [[1,2] , [2,3] , [6,7]]
+con_cat = reduce(lambda a , b : a + b, data)
+print(con_cat)
+
+#=========================again practice map filter reduce=====================>>
+
+numbers = [ n for n in range(1 ,6)]
+
+even_nums =list( map(lambda x : "even" if x % 2 == 0 else "odd", numbers))
+print(even_nums)
 
 
-# quizapp()
-#===========================task questions==============>
+even_list =list( filter(lambda x :  x % 2 == 0 , numbers))
+print(even_list)
+# even_number = list( filter(lambda x :"even" if x % 2 ==0 else "odd", numbers))
+# print(even_number)
 
+from functools import reduce
+
+red_list = reduce(lambda x , y : x + y , numbers)
+print(red_list)
