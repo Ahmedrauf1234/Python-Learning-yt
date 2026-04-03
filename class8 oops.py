@@ -1,5 +1,8 @@
 ##===============OOPS IN PYTHON (object orenting programming))====================>>
 #functionn ko used krte hve redundancy reduce hojati hai reuseability increase hojati hai
+#constructor me jo cheez likhi hoti usko attributes kehte hen || or wo objecr k attributes kehlatte hen
+#or class k neachey jo likhe hote hen wo class k attributes kehlatte hen
+#or jo hum functions likhte hen usko methods bolte hen
 
 class Student:  #ye class hai
     name = "Ahmed"
