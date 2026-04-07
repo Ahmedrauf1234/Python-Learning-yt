@@ -116,6 +116,39 @@ class Student(User):
     # u = User()
 s1 = Student()
 print(s1.name) #err nh ayega q k super ki madad se oper wale constructor ko axcess kiya
+
+
+#==========================
+
+class Phone:
+    def __init__(self , price , brand , camera):
+        print("inside phone constructor")
+        self.__price = price
+        self.brand = brand
+        self.camera = camera
+    
+    # def show_price(self):
+    #    return print(self.__price)
+
+    def buy(self):
+        print("Purchasing a Phone")
+    
+class SmartPhone(Phone):
+    def __init__(self , price , brand , camera , os , ram):
+        print("isnside at top of smartphone constructor ")
+        super().__init__(price , brand , camera) #constructor me he super ka call zada hota hai
+        self.os = os
+        self.ram = ram
+        print("inside and in the smart phone constructor")
+
+s = SmartPhone(23000 , "Apple" ,"45MP" , 4567 , 256)
+# s.show_price()
+
+
+
+        
+
+        
     
 
 
